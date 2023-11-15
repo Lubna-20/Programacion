@@ -1,0 +1,22 @@
+package MisClases;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int  arNumeros= {1,2,4,8};
+		
+		int [][] tabla = {{}};
+		
+		int [][] tabla = new int[4][3];
+		
+		tabla [0][0]=1;
+		tabla [0][1]=2;
+		tabla [0][3]=3;
+		
+		
+	
+	}
+}

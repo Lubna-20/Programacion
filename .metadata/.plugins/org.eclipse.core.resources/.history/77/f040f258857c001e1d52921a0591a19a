@@ -1,0 +1,118 @@
+package MisClases;
+
+import java.util.Arrays;
+import java.util.Random;
+
+public class arrayEjemplo {
+
+	public static void main(String[] srgs) {
+		
+		
+		//DECLARAMOS UNA VARIABLE DE TIPOM ARRAY A ENTEROS 
+		//OJO EL ARRAY TODAVIA NO ESTA CREADO
+	}
+		int[] arNumeros={1,2,3,4,5,6,7,8,9,10};
+		int[] copiarArray(arNumeros);
+		System.out.println(Arrays.toString(arNumeros));
+		System.out.println(Array.toString(res));
+	
+		//CREAMOS EL ARRAY Y SE LO ASIGNAMOS A LA VARIABLE ANTERIOR
+		//arNumeros=new int[10] ;
+	
+	
+		//int[] arNumeros1=new int[10] ;
+		
+		int numPositivo=0;
+		int numNegativo=0;
+		//NOS RECORREMOS LAS DISTINTAS POSICIONES DEL ARRAY 
+		for(int i=0; i < arNumeros.length; i++) {
+			int valor= arNumeros[i];
+			
+			if(valor>=0) 
+				numPositivo++;
+			else 
+				numNegativo++;
+		
+		System.out.println(numPositivo);
+		System.out.println(numNegativo);
+		mostrarContenido(arNumeros);
+		}
+}
+
+	
+
+	public static void mostrarContenido(int[]arDatos) {
+		for(int i=0; i < arDatos.length; i++) {
+			int valor = arDatos[i];
+			System.out.println(valor);
+		}
+	
+	}
+
+	
+	public static int[] contarParesImpares(int[] arDatos) {
+		int numPares=0;
+		int numImpares=0;
+		
+		for(int i=0;i<arDatos.length;i++) {
+			int valor=arDatos[i];
+		
+	
+		for(int valor:arDatos) {
+			
+			if(valor%2==0) 
+				numPares++;
+				else numImpares++;
+		}
+			
+			int[]resultado= {numPares,numImpares};
+		 int [] resultado	=new int[2];
+
+	}
+	
+}
+	public static  int [] estaOrdenado(int arNumeros) {
+		for(int i=1;i<arNumeros.length;i++) {
+			if(arNumeros[i] < arNumeros[i-1])
+				return false;
+			
+			
+	}
+		return true;
+	}
+	
+
+	public static  int [] lanzarDado(int numVeces) {
+		//LAS POSICIONES int DEL ARRAY SE INICIALIZAN A 0
+		int [] resultado=new int [6];
+		Random dado=new Random();
+		
+		for (int i=0;i<numVeces;i++) {
+			int valor=dado.nextInt(1,7);//LANZAMOS EL DADO
+			//++ ES LO MISMO QUE resultado[valor-1]=resultado[valor-1]+1;
+			resultado[valor-1]++;
+		}
+		return resultado;
+	
+	}
+		
+	
+
+		
+	
+	public static  int [] copiarArray(int[] arDatos) {
+		
+		int[]resultado=new int[arDatos.length];
+		
+		for(int i=0;i<arDatos.length;i++) {
+			resultado[i]=arDatos[i];
+			
+		}
+	
+	}
+}
+
+
+
+
+

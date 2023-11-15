@@ -1,0 +1,13 @@
+package dados;
+
+import java.util.Random;
+
+public class lanzardados {
+
+	
+	int lanzarDado(int numVeces, int valor) {
+		
+		Random dado = new Random();
+		int valor=dado.nextInt(1,7);
+	}
+}

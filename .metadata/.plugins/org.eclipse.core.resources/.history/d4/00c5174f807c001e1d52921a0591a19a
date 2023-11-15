@@ -1,0 +1,10 @@
+package MisClases;
+
+public class ejercicioArrayDados {
+
+	public static void main(String[] args) {
+		// LANZAR UN DADO
+		
+	}
+
+}

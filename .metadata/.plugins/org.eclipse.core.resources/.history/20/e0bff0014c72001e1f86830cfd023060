@@ -1,0 +1,13 @@
+package MisClases;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		BoletinEjercicios ejercicios = new BoletinEjercicios();
+		
+		if()
+	}
+
+}

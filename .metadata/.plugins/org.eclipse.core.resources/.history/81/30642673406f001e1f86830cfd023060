@@ -1,0 +1,50 @@
+package MisClases;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class JuegoTiempo {
+
+	//ATRIBUTOS
+	private long momentoInicial;
+	private int numeroSegundosMinimos;
+	private int numeroSegundosMaximos;
+	
+	//METODOS
+	
+	public void setMomentoInicial() {
+		
+		momentoInicial=System.currentTimeMillis();
+	}
+	public long medirDiferenciaTiempo() {
+		
+		long tiempoActual=System.currentTimeMillis();
+		long diferencia=tiempoActual-momentoInicial;
+		
+		return diferencia;
+	}
+	
+	public void jugarPartida(){
+		//GENERAMOS UN NUMERO ALEATORIO
+		Random numeroAleatorio= new Random();
+		int numSegundos=numeroAleatorio.nextInt(numeroSegundosMinimos,numeroSegundosMaximos);
+		
+		System.out.println("El numero de segundos adivinar es: " + numSegundos);
+		System.out.println("Pulsa enter cuandop quiras que comience la cuenta");
+		Scanner teclado=new Scanner(System.in);
+		teclado.nextLine();
+		//EMPEZAMOS A CONTAR EL TIEMPO DESDE ESE MOMENTO
+		setMomentoInicial();
+		System.out.println("Pulsa enter cuando creas que han pasado los segundos ");
+		teclado.nextLine();
+		
+		double tiempoEnSegundos=medirDiferenciariempo();
+		
+		//CALCUALMOS LA DIFERENCIA DE TIEMPO QUE HA HABIDO
+		double diferencias= tiempoEnSegundos- numSegundos;
+		//SI EL USUARIO SE HA QUEDADO CORTO (DIFERENCIA NEGATIVA)LA PASAMOS A POSITIVO
+		if(diferencia<1)
+			System.out.println("Enhorabuena has ganado. La diferencia a sido: " + diferencia);
+		
+	}
+}

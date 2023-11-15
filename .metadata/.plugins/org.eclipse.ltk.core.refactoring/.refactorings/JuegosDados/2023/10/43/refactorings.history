@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Aplicacion.java&apos; to &apos;MisClases.package-info.java&apos;&#x0D;&#x0A;- Original project: &apos;JuegosDados&apos;&#x0D;&#x0A;- Destination element: &apos;MisClases.package-info.java&apos;&#x0D;&#x0A;- Original element: &apos;MisClases.Aplicacion.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=MedirTiempo/src&lt;MisClases{package-info.java" element1="/src&lt;MisClases{Aplicacion.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1698046456702" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package MisEjercicos;
+
+public class AplicacionSimon {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		/// Muestro el menú al usuario
+		System.out.println(" 1 - Jugar a la versión 1");
+		System.out.println(" 2 - Jugar a la versión 2 (con margen de errores)");			
+		System.out.println(" 3 - Salir");	
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package MisClases;
+
+import java.util.Random;
+
+public class JuegoTiempo {
+
+	//ATRIBUTOS
+	private long momentoInicial;
+	private int numeroSegundosMinimos;
+	private int numeroSegundosMaximos;
+	
+	//METODOS
+	
+	public void setMomentoInicial() {
+		
+		momentoInicial=System.currentTimeMillis();
+	}
+	public long medirDiferenciaTiempo() {
+		
+		long tiempoActual=System.currentTimeMillis();
+		long diferencia=tiempoActual-momentoInicial;
+		
+		return diferencia;
+	}
+	
+	public void jugarPartida(){
+		
+		Random numeroAleatorio= new Random();
+		int numSegundos=numeroAleatorio.nextInt(numeroSegundosMinimos,numeroSegundosMaximos);
+		
+		System.out.println("El numero de segundos adivinar es: " + numSegundos);
+		System.out.println("Pulsa enter cuandop quiras");
+	}
+}

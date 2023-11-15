@@ -1,0 +1,37 @@
+package MisClases;
+
+public class Aplicacion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//EJERCICIO1
+		BoletinEjercicios ejercicios = new BoletinEjercicios();
+		
+		if(ejercicios.esPalindromo("ojo") ==true)
+			System.out.println("Es àlindromo");
+		else
+			System.out.println("No es palindromo");
+
+		
+		
+		System.out.println(ejercicios.invertirMayusculasMinusculas("Fernando García"));
+		System.out.println(ejercicios.quitarEspacio("Fernando García"));
+		System.out.println(ejercicios.devolverIniciales("Fernando García"));
+		
+		
+		
+/*		if(ejercicios.esPalindromoV2("OjO")==true)
+			System.out.println("Es palíndromo");
+		else 
+			System.out.println("No es palíndromo");
+		
+*/		
+		
+//		System.out.println(ejercicios.invertirCadena("casa"));
+	}
+
+
+	}
+
+

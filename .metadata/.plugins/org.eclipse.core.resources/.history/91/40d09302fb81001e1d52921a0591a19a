@@ -1,0 +1,21 @@
+ package MisClases;
+
+public class Juego {
+	
+	final int private numFilas=6;
+	final intprivast numColumnas=7;
+
+	
+	char[][]tablero;
+	
+	//CONSTRUCTOR
+	
+	Juego(){
+		
+		tablero= new char [numFilas][numColumnas];
+	}
+	
+	void vaciarTablero() {
+		
+	}
+}

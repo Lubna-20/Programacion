@@ -1,0 +1,14 @@
+package MisClases;
+
+public class arrayEjemplo {
+
+	public static void main(String[] srgs) {
+		
+		//DECLARAMOS UNA VARIABLE DE TIPOM ARRAY A ENTEROS 
+		//OJO EL ARRAY TODAVIA NO ESTA CREADO
+		int[] arNumeros;
+		//CREAMOS EL ARRAY Y SE LO ASIGNAMOS A LA VARIABLE ANTERIOR
+		arNumeros=new int[10] ;
+		//INT []
+	}
+}
