@@ -1,8 +1,0 @@
- package MisClases;
-
-public class Juego {
-	
-	int numFilas=6;
-	int numColumnas=6;
-
-}

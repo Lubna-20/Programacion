@@ -1,9 +1,0 @@
-package dados;
-
-public class lanzardados {
-
-	
-	int lanzarDado(int numVeces, int valor) {
-		
-	}
-}
