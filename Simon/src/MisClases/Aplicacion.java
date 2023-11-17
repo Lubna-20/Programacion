@@ -13,16 +13,15 @@ public class Aplicacion {
 		boolean salir=false;
 		
 		while(salir==false)
-		{
+		
 			/// Muestro el menú al usuario
 			System.out.println("----------MENU----------");
 			System.out.println("1 - Nueva partida");
 			System.out.println("2 - Modificar tiempo espera entre valor (actual 1000)");
 			System.out.println("3 - Ver número máximo de aciertos en la actual ejecución");
-			System.out.println("+4 - Salir");	
-		System.out.println();
+			System.out.println("4 - Salir");	
 			
-			int valor=teclado.nextInt();
+			int valor=teclado.nextInt(); 
 			if(valor==1) {
 				juego.nuevaPartida();
 				
@@ -33,11 +32,9 @@ public class Aplicacion {
 			if(valor==4) {
 				salir=true;
 			}
-		}
+		
 	
-
-/*
-	String cadena="1234123";
+	/*String cadena="1234123";
 	
 	for(int i=0;i<cadena.length();i++) {
 		
@@ -54,6 +51,6 @@ public class Aplicacion {
 		}
 */	
 	
-	}
+		}
 
 }

@@ -1,0 +1,17 @@
+package MisClases;
+
+public class Juego {
+	//Atributos
+	String secuencia;
+	private static final int rojo=1;
+	private static final int =1;
+	
+	
+	// Métodos
+	void  nuevaPartida(){
+		
+		
+		 
+		
+	}
+}
