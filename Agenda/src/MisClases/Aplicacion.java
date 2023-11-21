@@ -17,6 +17,7 @@ public class Aplicacion {
 			System.out.println("3- Modificar Entrada ");
 			System.out.println("4- Borrar Entrada");
 			System.out.println("5- Buscar Entrada");
+			System.out.println("6- Compactar Agenda");
 			System.out.println("9- Salir");
 		
 			String opcion=teclado.nextLine();
@@ -37,7 +38,9 @@ public class Aplicacion {
 			if(opcion.equals("5")) {
 				miAgenda.buscarAgenda();
 			}
-
+			if(opcion.equals("6")) {
+				miAgenda.comopactarAgenda();
+			}
 			if(opcion.equals("9")) {
 				salir=true;
 			}

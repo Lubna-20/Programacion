@@ -59,7 +59,24 @@ public class Agenda {
 			 //LA AGENDA ESTABA LLENA
 			 	return -1;
 		 }
+		 
 	 }
+	 
+	 public void comopactarAgenda() {
+		 
+		 DatosPersona[] arAuxiliar=new DatosPersona[agenda.length];
+		 int j=0;
+		 
+		 for(int i=0;i<agenda.length;i++) {
+			 if(agenda[i]!=null) {
+				 arAuxiliar[j]=agenda[i];
+				 j++;
+			 }
+		 }
+		 agenda=arAuxiliar;
+	 }
+	 
+	 
 	 
 	 public void buscarAgenda() {
 		 System.out.println("Introduce el termino de busqueda: ");
