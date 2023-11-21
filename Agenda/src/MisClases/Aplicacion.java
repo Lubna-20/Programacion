@@ -16,6 +16,7 @@ public class Aplicacion {
 			System.out.println("2- Añadir Entrada");
 			System.out.println("3- Modificar Entrada ");
 			System.out.println("4- Borrar Entrada");
+			System.out.println("5- Buscar Entrada");
 			System.out.println("9- Salir");
 		
 			String opcion=teclado.nextLine();
@@ -27,11 +28,14 @@ public class Aplicacion {
 			if(opcion.equals("2")) {
 				miAgenda.insertarEntrada();
 			}
-			if(opcion.equals("4")) {
+			if(opcion.equals("3")) {
 				miAgenda.modificarEntrada();
 			}
 			if(opcion.equals("4")) {
 				miAgenda.borrarEntrada();
+			}
+			if(opcion.equals("5")) {
+				miAgenda.buscarAgenda();
 			}
 
 			if(opcion.equals("9")) {

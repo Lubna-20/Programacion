@@ -6,11 +6,13 @@ public class Agenda {
 
 	//Atributos
 	DatosPersona[] agenda;
-	
+	Scanner teclado;
+
 	
 	 Agenda(int numEntradas) {
 	
 		agenda=new DatosPersona[numEntradas];
+		teclado=new Scanner(System.in);
 	 }
 	
 	 int insertarEntrada() {
@@ -29,7 +31,7 @@ public class Agenda {
 		 if(encontrado==true ) {
 			 //HE ENCONTRADO EL ELEMENTO
 			 //LE PEDIOMOS AL USUARIO LOS DATOS DEL NUEVO REGISTRO
-			 Scanner teclado=new Scanner (System.in);
+			
 			 
 			 System.out.println("Introduce el nombre");
 			 String nombre=teclado.nextLine(); 
@@ -56,6 +58,28 @@ public class Agenda {
 		 else {
 			 //LA AGENDA ESTABA LLENA
 			 	return -1;
+		 }
+	 }
+	 
+	 public void buscarAgenda() {
+		 System.out.println("Introduce el termino de busqueda: ");
+		 String termino=teclado.nextLine();
+		 termino=termino.toUpperCase();
+		 for(int i=0;i<agenda.length;i++) {
+			 if(agenda[i]!=null) {
+				 boolean deboMostrar=false;
+				 if(agenda[i].getNombre().toUpperCase().contains(termino))
+					 deboMostrar=true;
+				 else if(agenda[i].getNumMovil().toUpperCase().contains(termino))
+					 deboMostrar=true;
+				 else if(agenda[i].getNumFijo().toUpperCase().contains(termino))
+					 deboMostrar=true;
+				 else if(agenda[i].getEmail().toUpperCase().contains(termino))
+					 deboMostrar=true;
+				 
+				 if(deboMostrar==true)
+					 System.out.println(i + " - "+ agenda[i].formatoCorto());
+			 }
 		 }
 	 }
 	 
@@ -110,7 +134,7 @@ public class Agenda {
 	
 	public int  borrarEntrada() {
 		int entradaBorrada=-1;
-		Scanner teclado=new Scanner(System.in);
+		
 		System.out.println("Introduce el indice de la entrada a borrar : ");
 		int numero=teclado.nextInt();
 		teclado.nextLine();
