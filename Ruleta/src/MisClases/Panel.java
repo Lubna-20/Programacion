@@ -8,8 +8,9 @@ public class Panel {
 	
 	//CONSTRUCTOR
 	Panel(String p, String texto){
-		pista=p;
-		textoAdivinar=texto; 
+		pista=p.toUpperCase();
+		textoAdivinar=texto.toUpperCase(); 
+		
 		
 		estadoCasillas=textoAdivinar.toCharArray();
 	//SUSTITUIMOS POR '-' TODOS LOS CARACTERES QUE NO SEAN 
@@ -33,6 +34,9 @@ public class Panel {
 		int comprobarLetra(char letra){
 			
 			int numAciertos=0;
+			//ME ASEGURO QUE LA LETRA PASADA ESTA EN MAYUSCULA
+			letra=Character.toUpperCase(letra);
+			
 			
 			for(int i=0;i<textoAdivinar.length();i++) {
 				char caracter=textoAdivinar.charAt(i);

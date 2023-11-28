@@ -5,7 +5,6 @@ INDEX VERSION 1.134+C:\Users\usuario\Desktop\eclipse-workspace\Ejercicio2\.metad
 1795132080.index
 3770799582.index
 677214834.index
-1197946546.index
 1865797976.index
 3920588838.index
 1573569733.index

@@ -13,6 +13,8 @@ public class Ruleta {
 
 	}
 	 
+	 
+	 
 	 String getValorActual() {
 		 return ruleta[indicador];
 	 }
