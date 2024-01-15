@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\usuario\Desktop\eclipse-workspace\Ejercicio2\Examen"/>
+			<item value="C:\Users\usuario\Downloads\PCAula-20231219T094016Z-001\PCAula\GestionPC"/>
 			<item value="C:\Users\usuario\eclipse-workspace\PruebaClase\src\MisClases"/>
 		</list>
 	</section>
